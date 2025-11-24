@@ -1,0 +1,14 @@
+@import "../styles/globals.css";
+
+/* Preserve the no-scroll behaviour for the chat UI overlay */
+body {
+  overflow-y: hidden;
+}
+
+.course-video {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.dark .course-video {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,30 @@
+/* Add this file to further customize the player layout */
+.plyr-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Add padding to the top of the video to make room for controls */
+.plyr--video {
+  overflow: visible !important;
+}
+
+/* Ensure the video fills the container */
+.plyr video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Make sure settings menu is above other elements */
+.plyr__menu__container {
+  z-index: 10;
+}
+
+/* Ensure controls are always visible */
+.plyr--video.plyr--hide-controls .plyr__controls {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: none !important;
+}
